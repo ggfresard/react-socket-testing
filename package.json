@@ -1,43 +1,25 @@
 {
   "name": "demo-test-socket",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.10",
-    "@testing-library/react": "^11.2.6",
-    "@testing-library/user-event": "^12.8.3",
-    "@types/jest": "^26.0.22",
-    "@types/node": "^12.20.7",
-    "@types/react": "^17.0.3",
-    "@types/react-dom": "^17.0.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "typescript": "^4.2.4",
-    "web-vitals": "^1.1.1"
-  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "cd client && npm test",
+    "build": "cd client && npm run build",
+    "start": "ts-node index"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "socket.io": "^4.0.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.35",
+    "@types/socket.io": "^2.1.13",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  },
+  "author": "",
+  "license": "ISC"
 }
