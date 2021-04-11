@@ -6,7 +6,8 @@
   "scripts": {
     "test": "cd client && npm test",
     "build": "cd client && npm run build",
-    "start": "ts-node index"
+    "start": "ts-node index",
+    "install": "npm install && cd client && npm install"
   },
   "dependencies": {
     "express": "^4.17.1",
